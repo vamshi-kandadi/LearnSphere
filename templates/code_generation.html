@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Code Generation</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+    <h2>Code Generation</h2>
+
+    <label>ML Topic</label>
+    <textarea id="codePrompt" placeholder="e.g. Logistic Regression in Python"></textarea>
+
+    <button id="generateCode" class="btn">Generate Code</button>
+  </div>
+
+  <div class="card">
+    <h3>Generated Code</h3>
+    <pre id="codeOutput" class="output code-output"></pre>
+  </div>
+</div>
+
+<script src="/static/code_generation.js"></script>
+</body>
+</html>

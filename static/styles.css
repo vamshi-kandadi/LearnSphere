@@ -1,0 +1,350 @@
+/* =========================
+   GLOBAL RESET & THEME
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Segoe UI", sans-serif;
+  }
+  
+  body {
+    background: #f8fafc;
+    color: #0f172a;
+    line-height: 1.6;
+  }
+  
+  /* =========================
+     NAVBAR
+  ========================= */
+  .navbar {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 14px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #4f46e5;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+  }
+  
+  .nav-menu li a {
+    text-decoration: none;
+    color: #334155;
+    font-size: 15px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  
+  .nav-menu li a:hover {
+    background: #eef2ff;
+    color: #4f46e5;
+  }
+  
+  /* =========================
+     CONTAINER & CARD
+  ========================= */
+  .container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .card {
+    background: #ffffff;
+    padding: 26px;
+    margin-bottom: 28px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+  }
+  
+  /* =========================
+     HERO SECTION (HOME)
+  ========================= */
+  .hero {
+    background: linear-gradient(135deg, #eef2ff, #ffffff);
+    padding: 90px 20px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1e293b;
+  }
+  
+  .hero p {
+    margin-top: 14px;
+    font-size: 18px;
+    color: #475569;
+  }
+  
+  .hero-badges {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  
+  .hero-badges span {
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  /* =========================
+     SECTION TITLE
+  ========================= */
+  .section-title {
+    text-align: center;
+    margin: 60px 0 30px;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  
+  /* =========================
+     FEATURE / MODE CARDS
+  ========================= */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+  }
+  
+  .card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: white;
+    margin-bottom: 18px;
+  }
+  
+  .icon-blue { background: #6366f1; }
+  .icon-pink { background: #ec4899; }
+  .icon-cyan { background: #06b6d4; }
+  .icon-green { background: #22c55e; }
+  
+  .card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  
+  .card p {
+    font-size: 15px;
+    color: #64748b;
+    margin-bottom: 14px;
+  }
+  
+  /* =========================
+     FORMS & BUTTONS
+  ========================= */
+  label {
+    font-weight: 600;
+    margin-top: 12px;
+    display: block;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 15px;
+  }
+  
+  button, .btn {
+    display: inline-block;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  button:hover, .btn:hover {
+    background: #4338ca;
+  }
+  
+  /* =========================
+     OUTPUT BOXES
+  ========================= */
+  .output {
+    background: #f1f5f9;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 15px;
+    white-space: pre-wrap;
+  }
+  
+  /* CODE OUTPUT */
+  .code-output {
+    background: #020617;
+    color: #e5e7eb;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+  
+  /* AUDIO */
+  audio {
+    width: 100%;
+    margin-top: 14px;
+  }
+  
+  .audio-script {
+    background: #eef2ff;
+    color: #1e3a8a;
+  }
+  
+  /* =========================
+     IMAGE GRID
+  ========================= */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .image-grid img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+  
+  /* =========================
+     CTA SECTION
+  ========================= */
+  .cta {
+    background: #4f46e5;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+    border-radius: 32px 32px 0 0;
+  }
+  
+  .cta h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .cta p {
+    opacity: 0.95;
+  }
+  
+  /* =========================
+     FOOTER
+  ========================= */
+  .site-footer {
+    background: #020617;
+    color: #cbd5e1;
+    padding: 40px 20px 20px;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+  }
+  
+  .footer-links ul li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-links ul li a:hover {
+    color: white;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    font-size: 13px;
+    color: #94a3b8;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    padding-top: 16px;
+    margin-top: 20px;
+  }
+  
+  /* =========================
+     RESPONSIVE
+  ========================= */
+  @media (max-width: 768px) {
+    .nav-menu { display: none; }
+    .hero h1 { font-size: 32px; }
+  }
+  /* =========================
+   BACK BUTTON
+========================= */
+.back-button {
+  position: fixed;
+  top: 20px;        /* Below navbar */
+  left: 20px;
+  background: #ffffff;
+  color: #4f46e5;
+  border: 1px solid #e0e7ff;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: all 0.25s ease;
+  z-index: 999;
+}
+
+.back-button:hover {
+  background: #eef2ff;
+  transform: translateX(-4px);
+}
